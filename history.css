@@ -1,0 +1,135 @@
+:root {
+  --not: #808080;
+  --bg: #292929;
+  --border: rgba(0, 0, 0, 0.2);
+  --txt: white;
+}
+.historycontent {
+  width: 100vw;
+  height: 60vh;
+}
+.btnhistory {
+  background-color: var(--border);
+  padding-left: 1vw;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+#openwordhistory,
+#Clear {
+  border-right: 1px solid white;
+}
+
+.wordhisandClear {
+  color: white;
+  background: transparent;
+  font-size: x-large;
+  border: 0px;
+  height: 100%;
+  width: 15vw;
+}
+.wordhisandClear:hover {
+  transform: translateY(3px);
+  border: 1px solid white;
+  transition: 0.5s all ease-in;
+}
+
+#inputprint {
+  flex: 1;
+  height: 15vh;
+  font-size: x-large;
+  padding: 0px 5vw;
+}
+
+#reset {
+  height: 14vh;
+  color: tan;
+  box-shadow: 0px 0px 2px 2px #85754e;
+  text-shadow: 0px 0px 10px black;
+  transition: 0.5s all ease-in;
+  filter: brightness(1.5);
+}
+
+#reset:hover {
+  font-size: x-large;
+  color: tan;
+}
+
+.setting {
+  background-color: transparent;
+  width: 3vw;
+  height: 80%;
+  border: 0px;
+  transition: 0.5s all ease-in;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.detail:hover {
+  background: var(--bg);
+  overflow: auto;
+  color: var(--txt);
+  transition: 0.5s all ease-in;
+}
+
+.detail {
+  flex: 1;
+  font-size: larger;
+  color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  transition: 0.5s all ease-in;
+}
+
+#historyword {
+  display: flex;
+  justify-content: end;
+  text-align: start;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.list-style {
+  opacity: 0.7;
+  padding: 1vw;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: -1;
+  width: 100%;
+  font-size: x-large;
+  list-style: none;
+}
+
+.size {
+  position: fixed;
+  bottom: 10vh;
+  right: 10vh;
+  width: 20vh;
+  z-index: 2;
+  transition: 0.5s all ease-in;
+}
+
+.size:hover {
+  scale: 0.95;
+  transform: translateY(5px);
+  transition: 0.5s all ease-in;
+}
+
+#datahistory {
+  width: 100vw;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-overflow: inherit;
+}
+
+#datahistory::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

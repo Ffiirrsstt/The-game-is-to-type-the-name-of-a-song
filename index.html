@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesetting.css">
+    <link rel="stylesheet" href="scoreNavandWord.css">
+    <link rel="stylesheet" href="history.css">
+</head>
+
+<body>
+
+    <aside id="NavsettingLeft" class="fadeleft">
+        <div id="Navleftforsetting" class="flex flexcol Navsetting absolute-top">
+            <div>
+                <button id="notsave" class="buttonMode bg-button"
+                    title="Do not save data and close the settings window.">
+                    <h1 class="forsave">Do not save and close.</h1>
+                </button>
+                </h1>
+                </button>
+                <button id="back" class="buttonMode bg-button none" title="Go back to the previous page.">
+                    <h1 class="forsave">Go back.</h1>
+                </button>
+                </h1>
+                </button>
+                <button id="savedata" class="buttonMode boxmode bg-button"
+                    title="Save the data and close the settings window.">
+                    <h1 class="forsave">
+                        Save and close.
+                    </h1>
+                </button>
+            </div>
+            <div>
+                <button id="Mode" class="buttonheadNav">Mode</button>
+                <div id="Modedropdown" class="flex flexcol none">
+                    <button id="CM" class="CM buttonMode boxmode"
+                        title="Challenge Mode: Type as much and as fast as possible.">
+                        <h2>Challenge Mode</h2>
+                    </button>
+                    <button id="SM" class="SM buttonMode boxmode"
+                        title="Survival Mode: Type the received text in each round within the given time limit. No additional time will be added in each round. You will have the same amount of time in each round.">
+                        <h2>Survival Mode</h2>
+                    </button>
+                    <button id="UM" class="UM buttonMode boxmode"
+                        title="Ultimate Mode: After you finish typing, the remaining time will not be reset, and you will receive additional time based on the difficulty level rate.">
+                        <h2>Ultimate Mode</h2>
+                    </button>
+                </div>
+                <button id="level" class="buttonheadNav">Level</button>
+                <div id="leveldropdown" class="flex flexcol none tr">
+                    <button id="hard" class="buttonLevel buttonMode">
+                        Hard level
+                    </button>
+                    <button id="inter" class="buttonLevel buttonMode">
+                        Intermediate level
+                    </button>
+                    <button id="easy" class="buttonLevel buttonMode">
+                        Easy level
+                    </button>
+                </div>
+            </div>
+            <div class="flex flexcol">
+                <button id="focus" title="Click in case you are unable to enter a value in the white
+                box." class="buttonheadNav">Click in case you are unable to enter a value in the white
+                    box.</button>
+                <input type="text" id="artist" class='artistNav' placeholder="Please specify">
+                <div class="bloxlabel ">
+                    <label for="artist" title="Type the name of an artist or music band you like">
+                        Type the name of an artist or music band you like
+                    </label>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <section id="massageforchange" class="flex index none center">
+        <div class="flexcol flex absolute">
+            <div class="massage">I'm sorry,
+                but the name of that artist is not available in the database.</div>
+            <form action="" id="formchange" class="flex flexcol">
+                <input type="text" id="artistchange" class=""
+                    placeholder="Type to change the player's artist information.">
+                <button class="bottom btnchange index buttonMode boxmode bg-button"
+                    title="Save the data and close the settings window.">
+                    <h1 class="forsave">
+                        Modify data.
+                    </h1>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <aside id="settingStart" class="absolute-top center none">
+        <div class="flex flexcol">
+            <button class="modelevel top btnstart">Mode</button>
+            <div class="flex">
+                <button id="CMstart" class="CM buttonMode boxmode btncontrolstart"
+                    title="Challenge Mode: Type as much and as fast as possible.">
+                    <h2>Challenge Mode</h2>
+                </button>
+                <button id="SMstart" class="SM buttonMode boxmode btncontrolstart"
+                    title="Survival Mode: Type the received text in each round within the given time limit. No additional time will be added in each round. You will have the same amount of time in each round.">
+                    <h2>Survival Mode</h2>
+                </button>
+                <button id="UMstart" class="UM buttonMode boxmode btncontrolstart"
+                    title="Ultimate Mode: After you finish typing, the remaining time will not be reset, and you will receive additional time based on the difficulty level rate.">
+                    <h2>Ultimate Mode</h2>
+                </button>
+            </div>
+            <button class="modelevel btnstart">Level</button>
+            <div class="flex">
+                <button id="hardstart" class="buttonLevel buttonMode btncontrolstart">Hard level</button>
+                <button id="interstart" class="buttonLevel buttonMode btncontrolstart">Intermediate level</button>
+                <button id="easystart" class="buttonLevel buttonMode btncontrolstart">Easy level</button>
+            </div>
+            <div id="formstart" class="flex flexcol">
+                <div class="labelstart flex">
+                    <label for="artiststart" title="Type the name of an artist or music band you like">
+                        Type the name of an artist or music band you like
+                    </label>
+                </div>
+                <input type="text" id="artiststart" class="input-music-start bottom"
+                    placeholder="Please specify the name of the artist or music band.">
+            </div>
+            <button id="savedatastart" class="index buttonMode boxmode bg-button"
+                title="Save the data and close the settings window.">
+                <h1 class="forsave">
+                    Save and close.
+                </h1>
+            </button>
+        </div>
+    </aside>
+
+    <section id="detailscore" class="scoreNav absolute-top rightfor0vw">
+        <div class="flex flexcol absolute-top">
+            <div class="imgpeople-purple before">
+                <div class="flex flexcol Borderteam">
+                    <div>Challenge Mode</div>
+                    <div id="scoreMaxCM">
+                        Maximum score: 0 points
+                    </div>
+                    <div id="scordMaxLevelCM" class="opacity">
+                        Level : Hard Level
+                    </div>
+                </div>
+            </div>
+            <div class="SM before">
+                <div class="flex flexcol Borderteam">
+                    <div>Survival Mode</div>
+                    <div id="scoreMaxSM">
+                        Maximum score: 0 points
+                    </div>
+                    <div id="scordMaxLevelSM" class="opacity">
+                        Level : Hard Level
+                    </div>
+                </div>
+            </div>
+            <div class="UM before">
+                <div class="flex flexcol Borderteam">
+                    <div>Ultimate Mode</div>
+                    <div id="scoreMaxUM">
+                        Maximum score: 0 points
+                    </div>
+                    <div id="scordMaxLevelUM" class="opacity">
+                        Level : Hard Level
+                    </div>
+                </div>
+            </div>
+            <div id="statistics" class="history-open-score flex">
+                <h3 class="text-core">
+                    Score statistics
+                </h3>
+            </div>
+            <div id="statisticsMode" class="flex flexcol none">
+                <button id="statisticsCM" class="historyopen CM">
+                    Challenge Mode
+                </button>
+                <button id="statisticsSM" class="historyopen SM ">
+                    Survival Mode
+                </button>
+                <button id="statisticsUM" class="historyopen UM ">
+                    Ultimate Mode
+                </button>
+            </div>
+        </div>
+        <aside>
+            <div id="statisticsModedata" class="fadeRi">
+            </div>
+        </aside>
+    </section>
+
+    <section id="gamefornone" class="araegame">
+        <div id="fornavscore" class="flex displaygame">
+            <div id="time" class="button-reset flex">
+                The game has not been started yet.
+            </div>
+            <div id="bgforword" class='wordstyle'>
+                <h1 id="word">
+                    Type according to the text in this field.
+                </h1>
+            </div>
+            <h2 id="score">score : 0</h2>
+        </div>
+    </section>
+
+    <section id="datahistory" class="none">
+        <dutton onclick="backGomian()" id="backfromhistory">
+            <img class="size" src="/img/rewind-button.png" title="Go back to the previous page."
+                alt="Go back to the previous page.">
+        </dutton>
+    </section>
+
+    <div>
+        <div id="closedhistory" class="history-open-score imgpeople-purple flex fadeleft opacityZero">
+            <h3 class="text-core sizefont">
+                Score history closed.
+            </h3>
+        </div>
+
+        <section id="historyfornone">
+            <div class="flex flexcol historycontent">
+                <div id="startinthree" class="forready none"></div>
+                <ul id="historyword" class="flex flexcol none">
+                </ul>
+            </div>
+            <div>
+                <div class="flex btnhistory">
+                    <button id="setting" class="setting">
+                        <img class="setting" src="img/gear.png" alt="Click here to access game settings."
+                            title="Click here to access game settings.">
+                    </button>
+                    <button id="openwordhistory" class="wordhisandClear flex"
+                        title="Click to open the history of the previous words.">
+                        Word history
+                    </button>
+                    <button id="Clear" class="wordhisandClear flex"
+                        title="Click to clear the data of all the previous word history.">
+                        Clear
+                    </button>
+                    <h2 id="modecurrent" class="detail">Mode :</h2>
+                    <h2 id="levelcurrent" class="detail">Level :</h2>
+                    <h2 id="Artistcurrent" class="detail">Artist :</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="inputfornone">
+            <div class="flex">
+                <input id="inputprint" type="text" class="index"
+                    placeholder="Please type the text correctly and quickly according to the text displayed above.">
+                <div class="flex">
+                    <button id="reset" class="index button-reset">
+                        Starting a new game</button>
+                </div>
+            </div>
+        </section>
+        <section id="endgame" class="flex index center absolute-top none">
+            <div class="flexcol flex absolute fontsizeend">
+                <div class="flexcol flex endresult top">
+                    <div>Time's up. The game has ended.<br>Summary of player's performance:</div>
+                </div>
+                <div class="flexcol flex endresult bottom">
+                    <div class="bottomborder flex">
+                        <div>Mode:</div>
+                        <div id="ModeEnd">
+                            <strong>Challenge</strong>
+                        </div>
+                    </div>
+                    <div class="bottomborder flex">
+                        <div>
+                            Difficulty:
+                        </div>
+                        <div id="LevelEnd">
+                            <strong>Hard</strong>
+                        </div>
+                    </div>
+                    <div class="bottomborder flex">
+                        <div>
+                            Score obtained:
+                        </div>
+                        <div id="scoreEnd">
+                            <strong>100</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex bottomborder">
+                    <button id="closeend" class="btnend">Close the data report.</button>
+                    <button id="startgame" class="btnend">Start a new game.</button>
+                </div>
+            </div>
+        </section>
+        <script src=" script.js"></script>
+</body>
+
+</html>
